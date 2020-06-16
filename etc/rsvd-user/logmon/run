@@ -1,0 +1,4 @@
+#!/bin/sh
+while [ -n "$(w | egrep "^$USER")" ]; do
+	sleep 0.1
+done

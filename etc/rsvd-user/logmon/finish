@@ -1,0 +1,4 @@
+#!/bin/sh
+rsvdupid=$(cat $RUNSVDIR_USER/pid)
+rm "$RUNSVDIR_USER/pid"
+kill -HUP $rsvdupid
